@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js --ignore ./view"
+    "start": "nodemon index.js --ignore ./view",
+    "build": "babel index.js --out-file dist/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,9 @@
     "pg": "^8.10.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
     "eslint": "^8.39.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
@@ -23,5 +27,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
   }
 }
