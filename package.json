@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js --ignore ./view"
+    "start": "nodemon index.js --ignore ./view",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
