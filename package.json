@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js --ignore ./view",
-    "build": "react-scripts build"
+    "start": "nodemon index.js --ignore ./view"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +12,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "formidable": "^2.1.1",
-    "pg": "^8.10.0",
-    "react-scripts": "^5.0.1"
+    "pg": "^8.10.0"
   },
   "devDependencies": {
     "eslint": "^8.39.0",
