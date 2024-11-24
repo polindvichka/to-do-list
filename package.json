@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js --ignore ./view",
-    "build": "babel index.js --out-file index.js"
+    "build": "npm run clean && npx babel lib -d dist --presets=@babel/preset-env",
+    "clean": "rm -rf dist"
   },
   "author": "",
   "license": "ISC",

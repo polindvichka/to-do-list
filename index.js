@@ -1,16 +1,17 @@
-const express = require('express');
+"use strict";
+
+var express = require('express');
 require('dotenv').config();
 // import routes
-const todoRoutes = require('./routes/todo');
+var todoRoutes = require('./routes/todo');
 
 // Running express server
-const app = express();
-const port = process.env.PORT || 8000;
+var app = express();
+var port = process.env.PORT || 8000;
 
 // route middlewares
 app.use('/api', todoRoutes);
-
-app.listen(port, () => {
+app.listen(port, function () {
   // eslint-disable-next-line no-console
-  console.log(`App listening at http://localhost:${port}`);
+  console.log("App listening at http://localhost:".concat(port));
 });
